@@ -1,0 +1,62 @@
+/* Начало стилей выбранной карточки */
+
+.card_selected {
+    background: linear-gradient(310deg, 
+    rgba(255,255,255,1) 94.3%, 
+    rgb(217, 22, 103) 94.3%, 
+    rgb(217, 22, 103) 95%, 
+    rgba(255,255,255,0) 95%
+    );
+    
+    border-bottom: 4px solid #d91667;
+    border-right: 4px solid rgb(217, 22, 103);
+    
+}
+
+.card_selected_hover:hover {
+    border-right: 4px solid #e62e7a;
+    border-bottom: 4px solid #e62e7a;
+    
+    background: linear-gradient(310deg, 
+        rgba(255,255,255,1) 94.3%, 
+        rgb(230, 46, 122) 94.3%, 
+        rgb(230, 46, 122) 95%, 
+        rgba(255,255,255,0) 95%
+    );
+}
+
+.card_selected::before {
+    background: #d91667;
+}
+
+.card_selected::after {
+    background: #d91667;
+    
+}
+
+.card_selected_hover:hover::after {
+    background: #e62e7a;
+}
+
+.card_selected_hover:hover::before{
+    background: #e62e7a;
+}
+
+.card__circle_selected {
+    background: #d91667;
+}
+
+.card:hover .card__circle_selected_hover{
+    background: #e62e7a;
+}
+
+.card__buy_selected {
+    display: none;
+}
+
+.card__slogan_selected_hover {
+    color: #e62e7a;
+    font-size: 16px;
+}
+
+/*  Конец стилей выбранной карточки  */

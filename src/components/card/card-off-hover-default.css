@@ -1,0 +1,58 @@
+.card-off-hover-defualt {
+    cursor: pointer;
+
+    position: relative;
+
+    border-radius: 10px;
+
+    width: 320px;
+    height: 480px;
+
+    overflow: hidden;
+
+    padding: 20px 0 0 45px ;
+
+    box-sizing: border-box;
+
+    background: linear-gradient(310deg, 
+    rgba(255,255,255,1) 94.3%, 
+    rgb(230, 46, 122) 94.3%, 
+    rgb(230, 46, 122) 95%, 
+    rgba(255,255,255,0) 95%
+    );
+    
+    border-bottom: 4px solid #d91667;
+    border-right: 4px solid #d91667;
+}
+
+.card-off-hover-defualt::before {
+    content: "";
+
+    z-index: 999;
+
+    display: block;
+
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+
+    background: #e62e7a;
+
+    width: 4px;
+    height: 433px;
+}
+
+.card-off-hover-defualt::after {
+    content: "";
+
+    display: block;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    background: #e62e7a;
+
+    width: 280px;
+    height: 4px;
+}

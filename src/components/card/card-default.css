@@ -1,0 +1,220 @@
+.card-wrapper {
+    width: 25%;
+    margin-right: 6.25%;
+}
+
+.card-header {
+    position: relative;
+
+    border-top: 3px solid #1698d9;
+    border-right: 3px solid #1698d9;
+
+    margin-left: auto;
+    width: calc(100% - 40px);
+    background: #fff;
+    height: 40px;
+}
+
+.card__logo {
+
+    position: absolute;
+
+    left: -31px;
+    bottom: -106px;
+    width: 123%;
+
+}
+
+.card__wrapper-text {
+    width: 220px;
+}
+
+.card__slogan{
+    margin: 0 0 24px;
+
+    color: #666;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+}
+
+.card__title-name{
+    margin: 0 0 15px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 48px;
+
+    line-height: 24px;
+}
+
+.card__title-name-with{
+    margin: 0;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 24px;
+}
+
+.card__paragraph{
+    margin: 0;
+
+    max-width: 150px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    line-height: 16px;
+    font-size: 14px;
+    color: #666;
+}
+
+.card__call {
+    text-align: center;
+
+    margin: 15px 0;
+
+    height: 17px;
+
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    color: #fff;
+}
+
+.card__buy {
+    display: inline-block;
+
+    border-bottom: 2px dotted #1698d9;
+
+    cursor: pointer;
+    color: #1698d9;
+}
+
+/*  Начало стилей дефолтной карточки */
+
+.card {
+    cursor: pointer;
+
+    position: relative;
+
+    border-bottom: 4px solid #1699da;
+    border-right: 4px solid #1699da;
+    border-radius: 10px;
+
+    width: 320px;
+    height: 480px;
+
+    overflow: hidden;
+
+    padding: 20px 0 0 45px ;
+
+    box-sizing: border-box;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(310deg, 
+        rgba(255,255,255,1) 94.3%, 
+        rgb(22, 153, 218) 94.3%, 
+        rgb(22, 153, 218) 95%, 
+        rgba(255,255,255,0) 95%
+    );
+
+}
+
+.card:hover {
+    background: linear-gradient(310deg, 
+        rgba(255,255,255,1) 94.3%, 
+        rgb(46, 168, 230) 94.3%, 
+        rgb(46, 168, 230) 95%, 
+        rgba(255,255,255,0) 95%
+    );
+
+    border-bottom: 4px solid #2ea8e6;
+    border-right: 4px solid #2ea8e6;
+}
+
+.card::before {
+    content: "";
+
+    z-index: 999;
+
+    display: block;
+
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+
+    background: rgb(22, 153, 218);
+
+    width: 4px;
+    height: 433px;
+}
+
+.card::after {
+    content: "";
+
+    display: block;
+
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    background: rgb(22, 153, 218);
+
+    width: 280px;
+    height: 4px;
+}
+
+.card:hover::after {
+    background: #2ea8e6;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card:hover::before{
+    background: #2ea8e6;
+}
+
+.card__circle {
+    /* display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center; */
+
+    
+    text-align: center;
+    
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 42px;
+    line-height: 19px;
+    
+    box-sizing: border-box;
+    margin: 0;
+    
+    width: 85px;
+    height: 85px;
+    
+    position: absolute;
+    z-index: 999;
+    
+    right: 18px;
+    bottom: 13px;
+    
+    background: #1698d9;
+    
+    border-radius: 45px;
+    
+    color: #fff;
+
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.card__circle-kg  {
+    display: block;
+    margin-top: 10px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 21px;
+}
+
+.card:hover .card__circle{
+    background: #2ea8e6;
+}
+
+/* Конец стилей дефолтной карточки */

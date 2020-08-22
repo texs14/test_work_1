@@ -1,0 +1,37 @@
+.card-list {
+    display: flex;
+    margin: auto;
+    padding: 0;
+
+    width: 1120px;
+}
+
+.card-list__item {
+    margin-right: 80px;
+    width: 320px;
+}
+
+.card-list__item:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 1150px) {
+    .card-list {
+        box-sizing: border-box;
+        width: 80%;
+        flex-wrap: wrap-reverse;
+        justify-content: space-around;
+    }
+
+    .card-list__item {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 840px) {
+    .card-list {
+        flex-flow: column;
+        align-items:center;
+    }
+}
